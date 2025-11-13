@@ -1,37 +1,36 @@
 #include <stdio.h>
 
 int main() {
-    int a = 10, b = 5;
-    int result;
-    int x = 1, y = 0;
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
 
-    // ----- Arithmetic Operators -----
-    printf("=== Arithmetic Operators ===\n");
+    // Arithmetic
+    printf("\nArithmetic Operators:\n");
     printf("a + b = %d\n", a + b);
     printf("a - b = %d\n", a - b);
     printf("a * b = %d\n", a * b);
     printf("a / b = %d\n", a / b);
-    printf("a %% b = %d\n", a % b); // %% prints '%'
+    printf("a %% b = %d\n", a % b);
 
-    // ----- Relational Operators -----
-    printf("\n=== Relational Operators ===\n");
-    printf("a == b : %d\n", a == b);
-    printf("a != b : %d\n", a != b);
-    printf("a > b  : %d\n", a > b);
-    printf("a < b  : %d\n", a < b);
-    printf("a >= b : %d\n", a >= b);
-    printf("a <= b : %d\n", a <= b);
+    // Relational
+    printf("\nRelational Operators:\n");
+    printf("a > b = %d\n", a > b);
+    printf("a < b = %d\n", a < b);
+    printf("a == b = %d\n", a == b);
+    printf("a != b = %d\n", a != b);
 
-    // ----- Logical Operators -----
-    printf("\n=== Logical Operators ===\n");
-    printf("x && y = %d\n", x && y);  // Logical AND
-    printf("x || y = %d\n", x || y);  // Logical OR
-    printf("!x = %d\n", !x);          // Logical NOT
+    // Logical
+    printf("\nLogical Operators:\n");
+    printf("(a > b) && (a != 0) = %d\n", (a > b) && (a != 0));
+    printf("(a < b) || (b != 0) = %d\n", (a < b) || (b != 0));
+    printf("!(a == b) = %d\n", !(a == b));
 
-    // ----- Conditional (Ternary) Operator -----
-    printf("\n=== Conditional (Ternary) Operator ===\n");
-    result = (a > b) ? a : b;
-    printf("Greater number between a and b is: %d\n", result);
+    // Conditional
+    printf("\nConditional Operator:\n");
+    int max = (a > b) ? a : b;
+    printf("Greater number is %d\n", max);
 
     return 0;
 }
+
