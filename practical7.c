@@ -12,11 +12,14 @@ int fib(int n) {
 
 int main() {
     int n, i;
-    printf("Enter number: ");
+    printf("Enter a number: ");
     scanf("%d", &n);
+
     printf("Factorial = %d\n", fact(n));
+
     printf("Fibonacci Series: ");
     for (i = 0; i < n; i++)
         printf("%d ", fib(i));
+
     return 0;
 }
