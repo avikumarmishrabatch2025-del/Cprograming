@@ -32,4 +32,3 @@ int main() {
     printf("Overall CGPA = %.2f\n", total / n);
     return 0;
 }
-
