@@ -2,19 +2,15 @@
 #include <string.h>
 
 int main() {
-    char str1[50], str2[50];
+    char s1[50], s2[50];
     printf("Enter first string: ");
-    gets(str1);
+    gets(s1);
     printf("Enter second string: ");
-    gets(str2);
+    gets(s2);
 
-    printf("Concatenation: %s\n", strcat(str1, str2));
-
-    strcpy(str1, "Hello");
-    strcpy(str2, "World");
-    printf("Copy Example: %s\n", strcpy(str1, str2));
-
-    printf("Compare: %d\n", strcmp("apple", "banana"));
+    printf("Concatenation: %s\n", strcat(s1, s2));
+    printf("Copied string: %s\n", strcpy(s2, s1));
+    printf("Comparison result: %d\n", strcmp(s1, s2));
 
     return 0;
 }
